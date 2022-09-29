@@ -15,8 +15,8 @@ const images = [
 
 const galleryList = document.querySelector('ul.gallery');
 
-const galleryListItems = images.map((element, index) => {
-  const listItem = `<li class="gallery__item"><img class="gallery__photo" src="${images[index].url}" alt="${images[index].alt}"></li>`;
+const galleryListItems = images.map(element => {
+  const listItem = `<li class="gallery__item"><img class="gallery__photo" src="${element.url}" alt="${element.alt}"></li>`;
   return listItem;
 });
 
